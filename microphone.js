@@ -4,7 +4,7 @@ class Microphone {
       navigator.mediaDevices.getUserMedia({audio: true})
       .then(function(stream){
           this.audioContext = new AudioContext();
-          this.microphone = this.audioContext.createMediaStreamSource(stream);
+          this.microphone = this.audioContext.createMediaStreamSource(stream); 
           this.analyzer = this.audioContext.createAnalyser();
           this.analyzer.fftSize = 512;
           const bufferLength = this.analyzer.frequencyBinCount;
