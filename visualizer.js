@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 class Ball {
-    constructor(x, y){
+    constructor(x, y){ 
         this.x = x;
         this.y = y;
         this.radius = 8;
