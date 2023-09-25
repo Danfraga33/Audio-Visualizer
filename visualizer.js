@@ -58,7 +58,7 @@ function animate(){
                 ball.fall();
             } else if (ball.y > canvas.height/2){
                 ball.isFalling = false;
-                ball.jumpForce = Math.abs(samples[index]) * 65;
+                ball.jumpForce = Math.abs(samples[index]) * 200;
                 //balls jump force
             }
 
